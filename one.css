@@ -1,0 +1,112 @@
+@charset "utf-8";
+* {
+	margin: 0;
+	padding: 0;
+
+}
+body,
+html {
+	height: 100%;
+	width: 100%;
+    font-size: 12px;
+}
+ul li {
+	list-style-type: none;
+}
+a {
+	text-decoration: none;
+}
+.wrapper {
+    width: 100%;
+}
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    border: 1px solid whitesmoke;
+}
+
+#openbtn {
+    font-size: 12px;
+    cursor:pointer;
+}
+#closebtn {
+
+    font-size: 12px;
+    cursor: pointer;
+    float: right;
+}
+
+.center {
+    border: 1px solid black;
+    float: left;
+    width: 60%;
+    height: 500px;
+}
+.operate{
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    font-size: 0;
+}
+.operate span{
+    border-right:1px solid #ccc;
+    cursor: pointer;
+    font-size: 12px;
+    zoom: 0.45;
+    padding: 1px 1px 1px 1px;
+}
+.ok{
+    float: left;
+}
+.title {
+    font-size: 15px;
+    font-weight:bold;
+    padding-left: 4px;
+    margin-bottom: 1px;
+    border: 1px solid #ccc;
+}
+#container_prompt {
+    float: left;
+    width: 12%;
+    font-size: 12px;
+    
+}
+#container_prompt span {
+    font-weight: normal;
+    font-size: 12px;
+    border:1px solid black;
+    display: flex;
+    margin-bottom: 1px;
+
+}
+#context {
+    width: 86%;
+    float: left;
+}
+#context textarea {
+    border: 1px solid #ccc;
+    width: 100%;
+    border-radius: 4px;
+    outline: none;
+    overflow-y: hidden;
+    resize: none;
+    display: block;
+    margin-bottom: 2px;
+  }
+.rbar {
+    border: 2px solid blue;
+    width: 30%;
+    float: left;
+}
